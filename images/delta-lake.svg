@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34495e"/>
+      <stop offset="1" stop-color="#1a252f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".72" cy=".55" r=".5">
+      <stop offset="0" stop-color="#7f8c8d" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#7f8c8d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="layer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#95a5a6"/>
+      <stop offset="1" stop-color="#bdc3c7"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#bdc3c7"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+  <g fill="#7f8c8d" opacity=".25">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="120" cy="400" r="1.5"/><circle cx="760" cy="60" r="1.5"/><circle cx="420" cy="30" r="1.5"/><circle cx="300" cy="420" r="1.5"/><circle cx="700" cy="420" r="1.5"/>
+  </g>
+
+  <!-- connections: EC2 nodes ⇄ S3 -->
+  <g stroke="#95a5a6" stroke-width="2" fill="none" stroke-dasharray="6 7" opacity=".9">
+    <path d="M214 120C300 120 300 200 382 200" marker-end="url(#ar)"/>
+    <path d="M214 225H380" marker-end="url(#ar)"/>
+    <path d="M214 330C300 330 300 250 382 250" marker-end="url(#ar)"/>
+  </g>
+  <path d="M472 225H548" stroke="#bdc3c7" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- EC2 nodes -->
+  <g filter="url(#sh)">
+    <g transform="translate(70 84)">
+      <rect width="144" height="72" rx="12" fill="#2c3e50" stroke="#7f8c8d"/>
+      <rect x="16" y="18" width="36" height="36" rx="8" fill="#34495e"/>
+      <path d="M24 30h20M24 36h20M24 42h20" stroke="#bdc3c7" stroke-width="2" stroke-linecap="round"/>
+      <text x="64" y="34" fill="#ecf0f1" font-size="14" font-weight="700">node-a</text>
+      <text x="64" y="52" fill="#95a5a6" font-size="11">EC2</text>
+      <circle cx="128" cy="16" r="4" fill="#8fd0b0"/>
+    </g>
+    <g transform="translate(70 189)">
+      <rect width="144" height="72" rx="12" fill="#2c3e50" stroke="#7f8c8d"/>
+      <rect x="16" y="18" width="36" height="36" rx="8" fill="#34495e"/>
+      <path d="M24 30h20M24 36h20M24 42h20" stroke="#bdc3c7" stroke-width="2" stroke-linecap="round"/>
+      <text x="64" y="34" fill="#ecf0f1" font-size="14" font-weight="700">node-b</text>
+      <text x="64" y="52" fill="#95a5a6" font-size="11">EC2</text>
+      <circle cx="128" cy="16" r="4" fill="#8fd0b0"/>
+    </g>
+    <g transform="translate(70 294)">
+      <rect width="144" height="72" rx="12" fill="#2c3e50" stroke="#7f8c8d"/>
+      <rect x="16" y="18" width="36" height="36" rx="8" fill="#34495e"/>
+      <path d="M24 30h20M24 36h20M24 42h20" stroke="#bdc3c7" stroke-width="2" stroke-linecap="round"/>
+      <text x="64" y="34" fill="#ecf0f1" font-size="14" font-weight="700">node-c</text>
+      <text x="64" y="52" fill="#95a5a6" font-size="11">EC2</text>
+      <circle cx="128" cy="16" r="4" fill="#8fd0b0"/>
+    </g>
+  </g>
+
+  <!-- S3 bucket -->
+  <g filter="url(#sh)" transform="translate(384 168)">
+    <path d="M0 14L10 104C11 112 34 118 44 118S77 112 78 104L88 14" fill="#7f8c8d"/>
+    <ellipse cx="44" cy="14" rx="44" ry="14" fill="#bdc3c7"/>
+    <ellipse cx="44" cy="14" rx="30" ry="8" fill="#95a5a6"/>
+    <path d="M5 56C20 64 68 64 83 56" stroke="#95a5a6" stroke-width="2" fill="none"/>
+    <text x="44" y="94" fill="#1a252f" font-size="16" font-weight="800" text-anchor="middle">S3</text>
+  </g>
+
+  <!-- Delta Lake table: versioned layers -->
+  <g filter="url(#sh)" transform="translate(556 118)">
+    <g transform="translate(24 0)" opacity=".55">
+      <rect width="170" height="34" rx="8" fill="url(#layer)"/>
+      <text x="14" y="22" fill="#1a252f" font-size="12" font-weight="700">v1 · _delta_log</text>
+    </g>
+    <g transform="translate(12 44)" opacity=".78">
+      <rect width="170" height="34" rx="8" fill="url(#layer)"/>
+      <text x="14" y="22" fill="#1a252f" font-size="12" font-weight="700">v2 · merge</text>
+    </g>
+    <g transform="translate(0 88)">
+      <rect width="170" height="34" rx="8" fill="#ecf0f1"/>
+      <text x="14" y="22" fill="#1a252f" font-size="12" font-weight="700">v3 · current</text>
+      <circle cx="152" cy="17" r="5" fill="#5b7a6b"/>
+    </g>
+    <g transform="translate(0 140)">
+      <rect width="170" height="70" rx="10" fill="#2c3e50" stroke="#7f8c8d"/>
+      <path d="M18 24c10-8 20 8 30 0s20 8 30 0" stroke="#bdc3c7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <text x="92" y="30" fill="#ecf0f1" font-size="14" font-weight="700">Delta</text>
+      <text x="18" y="54" fill="#95a5a6" font-size="11">ACID · time travel</text>
+    </g>
+  </g>
+
+  <!-- integrity badge -->
+  <g transform="translate(372 330)">
+    <rect width="116" height="30" rx="15" fill="#2c3e50" stroke="#7f8c8d"/>
+    <path d="M16 15l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="38" y="20" fill="#ecf0f1" font-size="12" font-weight="600">checksum</text>
+  </g>
+</svg>

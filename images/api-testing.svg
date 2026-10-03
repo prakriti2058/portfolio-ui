@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef1f3"/>
+      <stop offset="1" stop-color="#d5dbe0"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#1a252f" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g stroke="#bdc3c7" stroke-width="1" opacity=".6">
+    <path d="M0 90H800M0 180H800M0 270H800M0 360H800M160 0V450M320 0V450M480 0V450M640 0V450"/>
+  </g>
+
+  <!-- test runner window -->
+  <g filter="url(#sh)">
+    <rect x="60" y="56" width="440" height="330" rx="16" fill="#1a252f"/>
+  </g>
+  <rect x="60" y="56" width="440" height="40" rx="16" fill="#2c3e50"/>
+  <rect x="60" y="80" width="440" height="16" fill="#2c3e50"/>
+  <circle cx="86" cy="76" r="6" fill="#7f8c8d"/><circle cx="106" cy="76" r="6" fill="#95a5a6"/><circle cx="126" cy="76" r="6" fill="#bdc3c7"/>
+  <text x="280" y="81" fill="#95a5a6" font-size="13" text-anchor="middle">pytest tests/api -v</text>
+
+  <g font-size="14">
+    <g transform="translate(84 130)">
+      <rect width="44" height="20" rx="4" fill="#34495e"/><text x="22" y="15" fill="#ecf0f1" font-size="11" text-anchor="middle" font-weight="700">GET</text>
+      <text x="56" y="15" fill="#bdc3c7">/users/{id}</text><text x="300" y="15" fill="#95a5a6">200</text>
+      <path d="M374 5l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(84 168)">
+      <rect width="44" height="20" rx="4" fill="#34495e"/><text x="22" y="15" fill="#ecf0f1" font-size="11" text-anchor="middle" font-weight="700">POST</text>
+      <text x="56" y="15" fill="#bdc3c7">/orders</text><text x="300" y="15" fill="#95a5a6">201</text>
+      <path d="M374 5l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(84 206)">
+      <rect width="44" height="20" rx="4" fill="#34495e"/><text x="22" y="15" fill="#ecf0f1" font-size="11" text-anchor="middle" font-weight="700">PUT</text>
+      <text x="56" y="15" fill="#bdc3c7">/orders/{id}</text><text x="300" y="15" fill="#95a5a6">200</text>
+      <path d="M374 5l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(84 244)">
+      <rect width="44" height="20" rx="4" fill="#34495e"/><text x="22" y="15" fill="#ecf0f1" font-size="11" text-anchor="middle" font-weight="700">DEL</text>
+      <text x="56" y="15" fill="#bdc3c7">/users/{bad}</text><text x="300" y="15" fill="#95a5a6">404</text>
+      <path d="M374 5l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(84 282)">
+      <rect width="44" height="20" rx="4" fill="#34495e"/><text x="22" y="15" fill="#ecf0f1" font-size="11" text-anchor="middle" font-weight="700">GET</text>
+      <text x="56" y="15" fill="#bdc3c7">/schema/orders</text><text x="300" y="15" fill="#95a5a6">200</text>
+      <path d="M374 5l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <path d="M84 326H476" stroke="#34495e"/>
+  <text x="84" y="356" fill="#8fd0b0" font-size="14" font-weight="700">52 passed</text>
+  <text x="180" y="356" fill="#7f8c8d" font-size="14">in 8.41s</text>
+  <rect x="340" y="345" width="136" height="8" rx="4" fill="#34495e"/>
+  <rect x="340" y="345" width="136" height="8" rx="4" fill="#8fd0b0" opacity=".85"/>
+
+  <!-- JSON payload card -->
+  <g filter="url(#sh)">
+    <rect x="520" y="40" width="240" height="186" rx="14" fill="#ffffff"/>
+  </g>
+  <text x="542" y="70" fill="#7f8c8d" font-size="11" letter-spacing="1.5">RESPONSE · 200 OK</text>
+  <g font-size="14">
+    <text x="542" y="100" fill="#2c3e50">{</text>
+    <text x="560" y="124"><tspan fill="#34495e">"id"</tspan><tspan fill="#95a5a6">: </tspan><tspan fill="#2c3e50">1042</tspan><tspan fill="#95a5a6">,</tspan></text>
+    <text x="560" y="148"><tspan fill="#34495e">"status"</tspan><tspan fill="#95a5a6">: </tspan><tspan fill="#5b7a6b">"shipped"</tspan><tspan fill="#95a5a6">,</tspan></text>
+    <text x="560" y="172"><tspan fill="#34495e">"total"</tspan><tspan fill="#95a5a6">: </tspan><tspan fill="#2c3e50">58.20</tspan></text>
+    <text x="542" y="196" fill="#2c3e50">}</text>
+  </g>
+  <rect x="662" y="186" width="82" height="24" rx="12" fill="#e5e8ea"/>
+  <text x="703" y="202" fill="#34495e" font-size="11" text-anchor="middle" font-weight="700">schema ✓</text>
+
+  <!-- CI pipeline -->
+  <g filter="url(#sh)">
+    <rect x="530" y="262" width="230" height="140" rx="14" fill="#2c3e50"/>
+  </g>
+  <text x="552" y="292" fill="#bdc3c7" font-size="11" letter-spacing="1.5">CI · ON EVERY COMMIT</text>
+  <g font-size="12" fill="#ecf0f1">
+    <path d="M573 340H717" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="4 5"/>
+    <circle cx="573" cy="340" r="15" fill="#34495e" stroke="#8fd0b0" stroke-width="2"/>
+    <path d="M566 340l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="645" cy="340" r="15" fill="#34495e" stroke="#8fd0b0" stroke-width="2"/>
+    <path d="M638 340l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="717" cy="340" r="15" fill="#34495e" stroke="#8fd0b0" stroke-width="2"/>
+    <path d="M710 340l5 5 9-10" stroke="#8fd0b0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="573" y="378" text-anchor="middle" fill="#95a5a6">build</text>
+    <text x="645" y="378" text-anchor="middle" fill="#95a5a6">test</text>
+    <text x="717" y="378" text-anchor="middle" fill="#95a5a6">report</text>
+  </g>
+</svg>

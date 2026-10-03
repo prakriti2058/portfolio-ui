@@ -114,7 +114,7 @@
     const label = $('.btn__text', copyBtn);
     copyBtn.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText('thapaprakriti2058@gmail.com');
+        await navigator.clipboard.writeText('prakriti.thapa1290@gmail.com');
         label.textContent = 'Copied ✓';
       } catch {
         label.textContent = 'Press Ctrl/Cmd + C';
