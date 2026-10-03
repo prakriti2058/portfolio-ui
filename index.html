@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prakriti Thapa - Portfolio</title>
+  <meta name="description" content="Prakriti Thapa — QA Engineer in San Antonio, TX, with experience in business and data analysis. Manual and automated testing, Jira, Python, API testing, SQL, Power BI.">
+  <meta name="theme-color" content="#fdfcf9">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231e2413'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='38' font-weight='700' text-anchor='middle' fill='%23cdd88f'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav is-solid" id="nav">
+    <a class="nav__brand" href="#home" aria-label="Prakriti Thapa, back to top">Prakriti<span>.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <a class="nav__cta" href="#contact">Say hello</a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Say hello</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero__glow" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+      <div class="hero__inner">
+        <p class="hero__hi">Hi, I'm</p>
+        <h1 class="hero__name">
+          Prakriti
+          <span class="hero__last">Thapa
+            <svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13c38-11 62 9 98-1s58-10 96 0 62 4 100-5"/></svg>
+          </span>
+        </h1>
+        <p class="hero__role"><span id="typedRole">QA Engineer</span><span class="cursor">|</span></p>
+        <p class="hero__lede">
+          I test web applications end to end, track defects until they're fixed, and automate API
+          testing with Python, with a background in business and data analysis.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact" data-magnetic>
+            <span class="btn__text">Get in touch</span>
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="btn btn--ghost" href="#experience" data-magnetic>
+            <span class="btn__text">See my work</span>
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about">
+          <div class="about__photo reveal">
+                        <div class="photo-frame">
+              <span>Photo coming soon</span>
+              <img src="profile.jpeg" alt="Prakriti Thapa" onerror="this.remove()">
+            </div>
+          </div>
+
+          <div class="about__content reveal">
+            <header class="about__head">
+              <span class="pill">Get to Know Me</span>
+              <h2>About <span class="grad">Me</span></h2>
+            </header>
+            <h3>QA Engineer based in <span class="amber">San Antonio, Texas</span></h3>
+            <p>
+              I'm Prakriti, a QA Engineer at SWANN. I test web applications end to end, log clear,
+              reproducible defects in <b>Jira</b>, and verify fixes before they reach users. I also build
+              automated API tests with <b>Python, Pytest and GitHub Actions</b>.
+            </p>
+            <p>
+              I have a B.S. in Computer Science from St. Cloud State and I'm a Salesforce Certified
+              Business Analyst. With a background in <b>SQL and Power BI</b>, I work comfortably between
+              developers, analysts and the people who use the product.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <div><span class="info-label">Location</span><span class="info-value">San Antonio, TX</span></div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c2 2 10 2 12 0v-4.5"/></svg></span>
+                <div><span class="info-label">Degree</span><span class="info-value">B.S. Computer Science</span></div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></span>
+                <div><span class="info-label">Current Role</span><span class="info-value">QA Engineer at SWANN</span></div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg></span>
+                <div><span class="info-label">Status</span><span class="info-value green">Open to Work</span></div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-accent">Let's Connect
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section--flip">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="pill">Experience</span>
+          <h2>Where I've <span class="grad">Worked</span></h2>
+        </header>
+
+        <ol class="tl">
+          <li class="tl__item reveal tl__item--now">
+            <div class="tl__when"><strong>Jun 2026</strong><span>to Present</span></div>
+            <article class="tl__card glow">
+              <h3>QA Engineer</h3>
+              <p class="tl__org">SWANN <span>· Remote</span></p>
+              <div class="tl__more" id="job0">
+                <div>
+                <ul>
+                  <li>Test a production web application end to end, covering functionality, user access and browser behavior, and reproduce issues reported by users.</li>
+                  <li>Log and track 20+ defects in Jira with clear reproduction steps, screenshots, severity and expected vs. actual results, working with developers through to resolution.</li>
+                  <li>Retest fixes and check for regressions before closing tickets, confirming the resolution with the users who reported the issue.</li>
+                  <li>Use browser DevTools to inspect console errors and network requests, narrowing down root causes before escalating to the development team.</li>
+                </ul>
+                </div>
+              </div>
+              <button class="tl__toggle" type="button" aria-expanded="false" aria-controls="job0"><span>Show details</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+            </article>
+          </li>
+          <li class="tl__item reveal">
+            <div class="tl__when"><strong>May 2025</strong><span>to Aug 2025</span></div>
+            <article class="tl__card glow">
+              <h3>IT Delivery Excellence Intern</h3>
+              <p class="tl__org">Medica Health Plans <span>· Hopkins, MN</span></p>
+              <div class="tl__more" id="job1">
+                <div>
+                <ul>
+                  <li>First point of contact for business users reporting application and data issues; gathered details, reproduced problems, and routed tickets to the correct technical team.</li>
+                  <li>Documented incidents, business impact, and resolution steps in internal tracking systems, building reference material that reduced repeat user questions.</li>
+                  <li>Used SQL and Power BI to investigate reported data discrepancies, identify root causes, and confirm resolution before closing.</li>
+                  <li>Partnered daily with developers, analysts, and non-technical users, translating technical detail into plain language.</li>
+                </ul>
+                </div>
+              </div>
+              <button class="tl__toggle" type="button" aria-expanded="false" aria-controls="job1"><span>Show details</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+            </article>
+          </li>
+          <li class="tl__item reveal">
+            <div class="tl__when"><strong>Jul 2024</strong><span>to Aug 2025</span></div>
+            <article class="tl__card glow">
+              <h3>Health Unit Coordinator</h3>
+              <p class="tl__org">CentraCare <span>· St. Cloud, MN · Part-time</span></p>
+              <div class="tl__more" id="job2">
+                <div>
+                <ul>
+                  <li>Served as the unit point of contact for system and data issues, triaging problems, resolving what could be handled on the spot, and escalating the rest in a high-volume environment.</li>
+                  <li>Maintained and validated 50–70+ patient records per shift in Epic (EHR), ensuring data accuracy and system integrity.</li>
+                  <li>Identified and corrected inconsistencies in clinical documentation and system records, improving data reliability for care teams.</li>
+                  <li>Handled confidential patient data in HIPAA-governed systems under strict access and privacy protocols.</li>
+                </ul>
+                </div>
+              </div>
+              <button class="tl__toggle" type="button" aria-expanded="false" aria-controls="job2"><span>Show details</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+            </article>
+          </li>
+          <li class="tl__item reveal">
+            <div class="tl__when"><strong>Sept 2023</strong><span>to May 2026</span></div>
+            <article class="tl__card glow">
+              <h3>Building Manager</h3>
+              <p class="tl__org">St. Cloud State University <span>· St. Cloud, MN · Part-time</span></p>
+              <div class="tl__more" id="job3">
+                <div>
+                <ul>
+                  <li>Resolved operational and equipment issues in real time, keeping events and building operations running without disruption.</li>
+                  <li>Led 3–5 staff per shift, prioritizing tasks and ensuring accurate information flow and timely issue resolution.</li>
+                  <li>Organized unstructured data into standardized formats to improve tracking and reporting.</li>
+                </ul>
+                </div>
+              </div>
+              <button class="tl__toggle" type="button" aria-expanded="false" aria-controls="job3"><span>Show details</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="pill">Skills</span>
+          <h2>The <span class="grad">Toolkit</span></h2>
+        </header>
+
+        <div class="bento">
+          <article class="panel panel--wide glow reveal">
+            <header><span class="panel__n">A</span><h3>Testing &amp; QA</h3></header>
+            <ul class="chips"><li>Manual Testing</li><li>Functional Testing</li><li>Regression Testing</li><li>Negative &amp; Edge-case Testing</li><li>API Testing</li><li>Cross-browser Testing</li><li>Defect Tracking</li><li>Test Documentation</li></ul>
+          </article>
+          <article class="panel glow reveal">
+            <header><span class="panel__n">B</span><h3>Automation</h3></header>
+            <ul class="chips"><li>Python</li><li>Pytest</li><li>REST APIs / JSON</li><li>GitHub Actions</li><li>Git</li><li>AWS</li></ul>
+          </article>
+          <article class="panel glow reveal">
+            <header><span class="panel__n">C</span><h3>Business Analysis</h3></header>
+            <ul class="chips"><li>Requirements Gathering</li><li>User Stories</li><li>UAT</li><li>Process Mapping</li><li>Stakeholder Management</li><li>Agile</li></ul>
+          </article>
+          <article class="panel panel--wide glow reveal">
+            <header><span class="panel__n">D</span><h3>Data &amp; Tools</h3></header>
+            <ul class="chips"><li>SQL</li><li>Power BI</li><li>Excel</li><li>Root Cause Analysis</li><li>Jira</li><li>ServiceNow</li><li>Browser DevTools</li><li>Epic (EHR)</li><li>Microsoft 365</li><li>Windows / macOS / Linux</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section--flip">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="pill">Projects</span>
+          <h2>Things I've <span class="grad">Built</span></h2>
+        </header>
+
+        <div class="projects">
+          <article class="proj proj--live glow reveal">
+            <div class="proj__viz" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9s1.3-6.4 3.8-9z"/></svg></div>
+            <span class="proj__n">No. 1 · Live site</span>
+            <h3>SWANN Community Website</h3>
+            <p>Designed and built the website for the South Asian Women and Allies Network, with pages for events, the team and ways to get involved. Tested it across browsers and devices before launch.</p>
+            <a class="proj__link" href="https://www.swannnetwork.com/" target="_blank" rel="noopener">Visit swannnetwork.com
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li></ul>
+          </article>
+
+          <article class="proj glow reveal">
+            <div class="proj__viz" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 2h3v16H5V5h3z"/><path d="M9 13l2 2 4-4"/></svg></div>
+            <span class="proj__n">No. 2</span>
+            <h3>Automated API Testing Framework</h3>
+            <p>A REST API test suite covering functional, regression and negative scenarios across 50+ endpoints — validating status codes, JSON payloads and schemas, run on every commit through GitHub Actions.</p>
+            <ul class="tags"><li>Python</li><li>REST API</li><li>JSON</li><li>GitHub Actions</li></ul>
+          </article>
+
+          <article class="proj glow reveal">
+            <div class="proj__viz" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 10a4 4 0 0 1 0 8z"/></svg></div>
+            <span class="proj__n">No. 3</span>
+            <h3>Distributed File System with Delta Lake</h3>
+            <p>Distributed file storage on AWS EC2, S3 and Delta Lake. Automated EC2↔S3 transfer tests with Python and the AWS CLI, cutting manual effort by 80% and validating integrity across nodes.</p>
+            <ul class="tags"><li>AWS</li><li>Delta Lake</li><li>Pytest</li><li>Git</li></ul>
+          </article>
+        </div>
+
+        <div class="creds">
+          <article class="cred glow reveal">
+            <span class="pill">Education</span>
+            <h3>B.S. in Computer Science</h3>
+            <p>St. Cloud State University · St. Cloud, MN</p>
+            <span class="cred__date">May 2026</span>
+          </article>
+          <article class="cred cred--seal glow reveal">
+            <div>
+              <span class="pill">Certification</span>
+              <h3>Salesforce Certified Business Analyst</h3>
+              <p>Requirements gathering, stakeholder management, business process mapping, user stories, Agile, CRM, documentation, UAT.</p>
+              <span class="cred__date">May 2026</span>
+            </div>
+            <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="ring" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+              <circle cx="60" cy="60" r="30"/>
+              <g class="seal__spin"><text><textPath href="#ring">certified · business analyst · salesforce ·</textPath></text></g>
+              <path class="seal__check" d="M47 61l9 9 18-20"/>
+            </svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <span class="pill reveal">Contact</span>
+      <h2 class="contact__title reveal">Let's <span>connect.</span></h2>
+      <p class="contact__sub reveal">I'm open to QA Engineer, Business Analyst and Data Analyst roles in the San Antonio area — and I'd love to hear from you.</p>
+      <div class="contact__cta reveal">
+        <a class="btn btn--primary btn--xl" href="mailto:thapaprakriti2058@gmail.com" data-magnetic>
+          <span class="btn__text">thapaprakriti2058@gmail.com</span>
+          <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <button class="btn btn--ghost" id="copyEmail" type="button" data-magnetic>
+          <span class="btn__text">Copy email</span>
+          <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="11" height="11" rx="2"/><path d="M5 15V6a1 1 0 0 1 1-1h9"/></svg></span>
+        </button>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/prakritithapa1" target="_blank" rel="noopener" data-magnetic>
+          <span class="btn__text">LinkedIn</span>
+          <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Prakriti Thapa</span>
+    <span>San Antonio, TX</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
